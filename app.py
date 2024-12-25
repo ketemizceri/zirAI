@@ -45,18 +45,23 @@ def predict():
             "marmara bolgesi": "Marmara Bolgesi",
             "marmara bölgesi": "Marmara Bolgesi",
             "ege": "Ege Bolgesi",
+            "ege bolgesi": "Ege Bolgesi",
             "akdeniz": "Akdeniz Bolgesi",
             "akdeniz bolgesi": "Akdeniz Bolgesi",
             "akdeniz bölgesi": "Akdeniz Bolgesi",
-            "dogu anadolu": "Doguanadolu Bolgesi",
-            "doguanadolu bolgesi": "Doguanadolu Bolgesi",
-            "doğu anadolu": "Doguanadolu Bolgesi",
-            "doğu anadolu bölgesi": "Doguanadolu Bolgesi",
-            "guneydogu": "Guneydogu Bolgesi",
-            "guneydoğu bolgesi": "Guneydogu Bolgesi",
-            "guneydogu bolgesi": "Guneydogu Bolgesi",
-            "güneydoğu": "Guneydogu Bolgesi",
-            "güneydoğu bölgesi": "Guneydogu Bolgesi",
+            "dogu anadolu": "Dogu Anadolu Bolgesi",
+            "doguanadolu bolgesi": "Dogu Anadolu Bolgesi",
+            "doğu anadolu": "Dogu Anadolu Bolgesi",
+            "doğu anadolu bölgesi": "Dogu Anadolu Bolgesi",
+            "guneydogu": "Guneydogu Anadolu Bolgesi",
+            "guneydoğu bolgesi": "Guneydogu Anadolu Bolgesi",
+            "guneydogu bolgesi": "Guneydogu Anadolu Bolgesi",
+            "güneydoğu": "Guneydogu Anadolu Bolgesi",
+            "güneydoğu bölgesi": "Guneydogu Anadolu Bolgesi",
+            "iç anadolu" : "Ic Anadolu Bolgesi",
+            "iç anadolu bölgesi": "Ic Anadolu Bolgesi",
+            "ıc anadolu bolgesi": "Ic Anadolu Bolgesi",
+            "ıc anadolu": "Ic Anadolu Bolgesi",
 
         }
 
@@ -163,43 +168,43 @@ def predict():
         }
 
         dt_urun_images = {
-            1: "https://upload.wikimedia.org/wikipedia/commons/f/f8/Pear_Fruit.JPG",  # Armut
-            2: "https://upload.wikimedia.org/wikipedia/commons/a/ab/ARPA_1.JPG",  # Arpa
-            3: "https://upload.wikimedia.org/wikipedia/commons/4/47/A_sunflower.jpg",  # Aycicegi
-            4: "https://upload.wikimedia.org/wikipedia/commons/6/6e/Cucurbita_pepo.jpg",  # Balkabagi
-            5: "https://upload.wikimedia.org/wikipedia/commons/a/aa/Bamya.JPG",  # Bamya
-            6: "https://upload.wikimedia.org/wikipedia/commons/9/91/Pea_pods.jpg",  # Bezelye
-            7: "https://upload.wikimedia.org/wikipedia/commons/5/5c/Assorted_Peppers.jpg",  # Biber
-            8: "https://upload.wikimedia.org/wikipedia/commons/a/a0/Borulce.jpg",  # Borulce
-            9: "https://upload.wikimedia.org/wikipedia/commons/5/51/Triticum_aestivum.JPG",  # Bugday
-            10: "https://upload.wikimedia.org/wikipedia/commons/2/2b/Rye_field.jpg",  # Cavdar
-            11: "https://upload.wikimedia.org/wikipedia/commons/c/c8/Tea_leaves.jpg",  # Cay
-            12: "https://upload.wikimedia.org/wikipedia/commons/3/3f/Still-life-with-walnuts.jpg",  # Ceviz
-            13: "https://upload.wikimedia.org/wikipedia/commons/d/d4/Strawberries.jpg",  # Cilek
-            14: "https://upload.wikimedia.org/wikipedia/commons/8/89/Tomato_je.jpg",  # Domates
-            15: "https://upload.wikimedia.org/wikipedia/commons/1/15/Red_Apple.jpg",  # Elma
-            16: "https://upload.wikimedia.org/wikipedia/commons/b/bb/Plum_purple.jpg",  # Erik
-            17: "https://upload.wikimedia.org/wikipedia/commons/1/1b/Green_Beans.jpg",  # Fasulye
-            18: "https://upload.wikimedia.org/wikipedia/commons/2/22/Hazelnuts.jpg",  # Findik
-            19: "https://upload.wikimedia.org/wikipedia/commons/3/31/Pistachio_macro_white_background.jpg",  # Fistik
-            20: "https://upload.wikimedia.org/wikipedia/commons/a/a5/Rose_flower.jpg",  # Gul
-            21: "https://upload.wikimedia.org/wikipedia/commons/4/41/Papaver_somniferum_%28opium_poppy%29.jpg",
+            1: "https://www.istockphoto.com/tr/foto%C4%9Fraflar/armut",  # Armut
+            2: "https://www.serkatarim.com.tr/arpa-nasil-yetistirilir/",  # Arpa
+            3: "https://osterras.com/aycicegi/",  # Aycicegi
+            4: "https://www.e-fidancim.com/urun/geleneksel-tatlilik-recelllik-balkabagi-fidesi-5-adet",  # Balkabagi
+            5: "https://www.tohumevi.com.tr/urun/sultani-bamya-tohumu",  # Bamya
+            6: "https://cookidoo.com.tr/recipes/recipe/tr-TR/r751324",  # Bezelye
+            7: "https://www.nefisyemektarifleri.com/blog/biber-cesitleri-ve-faydalari-nelerdir/",  # Biber
+            8: "https://www.demircibahcesi.com/taze-borulce",  # Borulce
+            9: "https://www.auroracereali.com/tr/prodotto/ekmeklik-bugday/",  # Bugday
+            10: "https://ciftcideneve.com/urun/5575/organik-cavdar-dogal-organik-dogal-organik-bugday-ve-bulgur",  # Cavdar
+            11: "https://pixabay.com/tr/photos/%C3%A7ay-tarlas%C4%B1-/",  # Cay
+            12: "https://www.bakkalhasan.com/urun/ceviz-kabuklu-maras-18-yayla-10-kg-cok-cok-al-cok-az-daha-ode",  # Ceviz
+            13: "https://www.agrowy.com/bitki-yetistiriciligi/cilek-yetistiriciligi",  # Cilek
+            14: "https://www.medicalpark.com.tr/domatesin-zararlari/hg-3885",  # Domates
+            15: "https://www.sadahastanesi.com/tr/1-elma-kac-kalori-elmanin-besin-degeri",  # Elma
+            16: "https://www.buyukanadoluhastanesi.com/haber/2190/erigin-faydalari-erik-tuketmeniz-icin-11-neden",  # Erik
+            17: "https://www.tarimdunyasi.net/2023/08/15/taze-fasulye-neden-100-lira-oldu/",  # Fasulye
+            18: "https://www.altungida.com.tr/findik-nedir/",  # Findik
+            19: "https://www.ozgurleblebi.com/Cig-Kabuklu-Fistik",  # Fistik
+            20: "https://www.tohumevi.com.tr/urun/kirmizi-gul-fidani-yediveren-kokulu",  # Gul
+            21: "https://www.google.com/imgres?q=ha%C5%9Fha%C5%9F%20foto&imgurl=https%3A%2F%2Fwww.demirbasmakina.com%2Fimaj%2Fblog-gorselleri%2Fhashas-ezmesi-nerede-kullanilir-demirbas.jpg&imgrefurl=https%3A%2F%2Fwww.demirbasmakina.com%2Fhashas-ezmesi-nerede-kullanilir&docid=p-1H76D-gRbA6M&tbnid=Id0IBieB9Qf6XM&vet=12ahUKEwiqkLey6cOKAxUNVfEDHao7IDcQM3oECH4QAA..i&w=900&h=592&hcb=2&ved=2ahUKEwiqkLey6cOKAxUNVfEDHao7IDcQM3oECH4QAA",
             # Hashas
-            22: "https://upload.wikimedia.org/wikipedia/commons/7/71/Ripe_Fig.jpg",  # Incir
-            23: "https://upload.wikimedia.org/wikipedia/commons/3/3e/Watermelon.jpg",  # Karpuz
-            24: "https://upload.wikimedia.org/wikipedia/commons/4/43/Cantaloupe.jpg",  # Kavun
-            25: "https://upload.wikimedia.org/wikipedia/commons/2/2f/Apricot.jpg",  # Kayisi
-            26: "https://upload.wikimedia.org/wikipedia/commons/7/75/Chestnuts.jpg",  # Kestane
-            27: "https://upload.wikimedia.org/wikipedia/commons/a/a6/Sweet_Cherry.jpg",  # Kiraz
-            28: "https://upload.wikimedia.org/wikipedia/commons/a/ac/Kivi_on_tree.jpg",  # Kivi
-            29: "https://upload.wikimedia.org/wikipedia/commons/a/a8/Cabbage.jpg",  # Lahana
-            30: "https://upload.wikimedia.org/wikipedia/commons/c/cd/Lemon.jpg",  # Limon
-            31: "https://upload.wikimedia.org/wikipedia/commons/a/a8/Lettuce_Mar._2014_01.jpg",  # Marul
-            32: "https://upload.wikimedia.org/wikipedia/commons/1/15/Lentils_Flowers.jpg",  # Mercimek
-            33: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Sweetcorn_crop.JPG",  # Misir
-            34: "https://upload.wikimedia.org/wikipedia/commons/5/5d/Banana_on_tree.jpg",  # Muz
+            22: "https://www.google.com/imgres?q=incir%20foto&imgurl=https%3A%2F%2Fwww.tazekuru.com%2FUserFiles%2FFotograflar%2F148-70-buyuk-jpg-70-buyuk.jpg&imgrefurl=https%3A%2F%2Fwww.tazekuru.com%2Fkurutulmus-incir-map-paket-50gr&docid=JRHAtKJKVkUQqM&tbnid=agiwn7Bn8MybPM&vet=12ahUKEwiHpdK96cOKAxXuVPEDHWfoItEQM3oECBcQAA..i&w=700&h=700&hcb=2&ved=2ahUKEwiHpdK96cOKAxXuVPEDHWfoItEQM3oECBcQAA",  # Incir
+            23: "http://t2.gstatic.com/licensed-image?q=tbn:ANd9GcRSD4__jt0WNMkqOCyLMnCg6rYIrt909b6pVEqZOLVFLW1cNeRuEsfgQNJQWIqceCcc",  # Karpuz
+            24: "https://www.zengardentr.com/urun/altin-kalpler-kavun-tohumu-geleneksel-hearts-of-gold-melon-1",  # Kavun
+            25: "https://www.medicalpark.com.tr/kayisi-cekirdegi-faydalari/hg-4028",  # Kayisi
+            26: "https://misbell.net/kestane-cesitleri/",  # Kestane
+            27: "http://www.saygifidancilik.com/kiraz/",  # Kiraz
+            28: "https://www.medicalpark.com.tr/kivinin-faydalari/hg-2933",  # Kivi
+            29: "https://tohumbaba.com/urun/lahana-tohumu/",  # Lahana
+            30: "https://www.lezzet.com.tr/lezzetten-haberler/limon-nasil-secilir",  # Limon
+            31: "https://tr.wikipedia.org/wiki/Marul",  # Marul
+            32: "https://surmeliciftligi.com/urun/kirmizi-mercimek-kg/",  # Mercimek
+            33: "https://abptds.com/misir-kurutma-neden-onemlidir/",  # Misir
+            34: "https://www.organikciyizbiz.com/organik-muz-organik-ufuklar",  # Muz
             35: "https://upload.wikimedia.org/wikipedia/commons/6/6e/Pomegranate.jpg",  # Nar
-            36: "https://upload.wikimedia.org/wikipedia/commons/1/14/Tangerines.jpg",  # Narenciye
+            36: "https://www.cnnturk.com/saglik/narin-faydalari-nelerdir-nelere-iyi-gelir-nar-nasil-tuketilir-ne-ise-yarar-1688140",  # Narenciye
             37: "https://upload.wikimedia.org/wikipedia/commons/e/ec/Chickpeas.jpg",  # Nohut
             38: "https://upload.wikimedia.org/wikipedia/commons/2/22/Cotton_plant_bolls.jpg",  # Pamuk
             39: "https://upload.wikimedia.org/wikipedia/commons/c/ca/Sugar_Beet.jpg",  # Pancar
@@ -223,13 +228,13 @@ def predict():
         if prediction[0] in dt_urun_dict:
             crop = dt_urun_dict[prediction[0]]
             image = dt_urun_images[prediction[0]]
-            result = "{} en iyi ürün bu.".format(crop)
-
+            result = "{}".format(crop)
+            return render_template('oneri.html', result=result, image=image)
         else:
             result = "Sorry, we could not determine the best crop to be cultivated with the provided data."
-
+            return render_template('oneri.html', result=result, image=None)
         # Sonucu döndür
-        return render_template('oneri.html', result=result)
+
     except Exception as e:
         return f"An error occurred: {e}"
 
