@@ -46,6 +46,7 @@ def predict():
             "marmara bölgesi": "Marmara Bolgesi",
             "ege": "Ege Bolgesi",
             "ege bolgesi": "Ege Bolgesi",
+            "ege bölgesi": "Ege Bolgesi",
             "akdeniz": "Akdeniz Bolgesi",
             "akdeniz bolgesi": "Akdeniz Bolgesi",
             "akdeniz bölgesi": "Akdeniz Bolgesi",
