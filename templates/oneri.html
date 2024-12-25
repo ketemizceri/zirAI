@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ZirAI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+    <style>
+		h1 {
+			color: mediumseagreen;
+			text-align: center;
+		}
+
+		.warning {
+            color: red;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .row {
+
+            display: flex;
+            justify-content: center; /* Kartı yatayda ortalar */
+            align-items: center; /* (Tercihe bağlı) Yatayda hizalarken dikey denge için de kullanılır */
+        }
+
+        .card {
+            margin: 0 auto;
+        }
+
+		.container{
+		background:#edf2f7;
+		font-weight: bold;
+		padding-bottom:10px;
+		border-radius: 15px;
+		}
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background: linear-gradient(135deg, #4caf50, #8bc34a, #4caf50); /* Yeşil tonları */
+            background-size: 400% 400%;
+            animation: waveBackground 5s ease infinite; /* Dalgalı geçiş animasyonu */
+            line-height: 1.6;
+
+        }
+
+
+        .navbar {
+            background-color: #2c3e50; /* Navbar arka plan rengi */
+            padding: 10px 20px; /* İç boşluk */
+            border-radius: 20px; /* Köşeleri oval yapmak için */
+            width: 90%; /* Navbar genişliği */
+            margin: 20px auto; /* Ortalamak için */
+            text-align: center;
+        }
+	</style>
+
+  <body>
+
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="./index.html">ZirAI</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="./oneri.html">Ürün Önerisi</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./hasat.html">Hasat Tahmini</a>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+  <div class="container mt-4">
+      <h1 class="text-success pt-2">Ürün Öneri Sistemi <span class="text-success"></span></h1>
+
+      <form action="/predict" method="POST">
+        <div class="row">
+            <div class="col-md-6">
+					<label for="Bolge">Bolge</label>
+					<input type="text" id="Bolge" name="Bolge" placeholder="Bolge gir" class="form-control" required step="0">
+				    </div>
+            <div class="col-md-6">
+					<label for="Sehir">Sehir</label>
+					<input type="text" id="Sehir" name="Sehir" placeholder="Sehir gir" class="form-control" required step="00">
+				    </div>
+
+
+
+        </div>
+        <div class="row mt-4">
+				<div class="col-md-4">
+					<label for="Sicaklik">Sicaklik</label>
+					<input type="number" step="0.01" id="Sicaklik" name="Sicaklik" placeholder="Sicaklik gir (°C)" class="form-control" required step="0">
+				</div>
+				<div class="col-md-4">
+					<label for="Nem">Nem</label>
+					<input type="number" step="0.01" id="Nem" name="Nem" placeholder="Nem Oranını gir (%)" class="form-control" required step="0">
+				</div>
+				<div class="col-md-4">
+					<label for="YagmurOrani">Yagis Miktari</label>
+					<input type="number" step="0.01" id="YagmurOrani" name="YagmurOrani" placeholder="Yagis Miktari gir (mm)" class="form-control" required>
+				</div>
+			</div>
+
+           <div class="row mt-4">
+
+           <div class="col-md-12 text-center">
+				<button type="submit" class="btn btn-primary btn-lg">Öneri Al</button>
+			</div>
+			</div>
+
+      </form>
+
+      {% if result %}
+    <div class="row mt-4">
+
+    <div class="col-md-4 d-flex justify-content-center">
+        <img src="{{url_for('static', filename='heatmap.png')}}" width="400" height="400">
+    </div>
+        <div class="col-md-4 d-flex justify-content-center">
+            <div class="card bg-dark" style="width: 22rem;">
+                <img src="{{url_for('static', filename='vinland.webp')}}" class="card-img-top" alt="ürünfotosu">
+                <div class="card-body text-white">
+                    <h5 class="card-title">Ürün önerisi şudur:</h5>
+                    <p class="card-text">{{ result }}</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-4 d-flex justify-content-center">
+        <img src="{{url_for('static', filename='dagilim.jpg')}}" width="400" height="400">
+    </div>
+    </div>
+{% endif %}
+
+
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
