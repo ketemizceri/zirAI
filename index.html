@@ -1,50 +1,101 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hasat Miktarı Hesaplama</title>
+    <title>Hasat Tahmini</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #e6f2f5;
+            border-radius: 10px;
+            padding: 20px 40px;
+            width: 500px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #4CAF50;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            text-align: left;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hasat Miktarı Hesaplama</h1>
-    <form method="POST">
-        <label for="um">Ektiginiz Urun Miktari (kg/da):</label>
-        <input type="text" id="um" name="um"><br><br>
+    <div class="container">
+        <h1>Hasat Tahmini 🌱</h1>
+        <form method="POST">
+            <label for="um">Ürün Miktarı (UM)</label>
+            <input type="text" id="um" name="um" placeholder="Ürün Miktarını Gir">
 
-        <label for="om">Toprak Organik Madde Orani (OM) [%]:</label>
-        <input type="text" id="om" name="om"><br><br>
+            <label for="om">Organik Madde Oranı (OM)</label>
+            <input type="text" id="om" name="om" placeholder="OM Gir">
 
-        <label for="npk">Toplam Besin Miktari (NPK) [kg/da]:</label>
-        <input type="text" id="npk" name="npk"><br><br>
+            <label for="npk">Besin Miktarı (NPK)</label>
+            <input type="text" id="npk" name="npk" placeholder="NPK Gir">
 
-        <label for="max_om">Maksimum Organik Madde Orani (maxOM) [%]:</label>
-        <input type="text" id="max_om" name="max_om"><br><br>
+            <label for="max_om">Maksimum OM</label>
+            <input type="text" id="max_om" name="max_om" placeholder="Maksimum OM Gir">
 
-        <label for="max_npk">Maksimum Besin Miktari (maxNPK) [kg/da]:</label>
-        <input type="text" id="max_npk" name="max_npk"><br><br>
+            <label for="max_npk">Maksimum NPK</label>
+            <input type="text" id="max_npk" name="max_npk" placeholder="Maksimum NPK Gir">
 
-        <label for="mevcut_su">Mevcut Su Miktari [mm]:</label>
-        <input type="text" id="mevcut_su" name="mevcut_su"><br><br>
+            <label for="mevcut_su">Mevcut Su</label>
+            <input type="text" id="mevcut_su" name="mevcut_su" placeholder="Mevcut Su Gir">
 
-        <label for="bitki_su_ihtiyaci">Bitki Su Ihtiyaci [mm]:</label>
-        <input type="text" id="bitki_su_ihtiyaci" name="bitki_su_ihtiyaci"><br><br>
+            <label for="bitki_su_ihtiyaci">Bitki Su İhtiyacı</label>
+            <input type="text" id="bitki_su_ihtiyaci" name="bitki_su_ihtiyaci" placeholder="Bitki Su İhtiyacını Gir">
 
-        <label for="mevcut_sicaklik">Mevcut Sicaklik [C°]:</label>
-        <input type="text" id="mevcut_sicaklik" name="mevcut_sicaklik"><br><br>
+            <label for="mevcut_sicaklik">Mevcut Sıcaklık</label>
+            <input type="text" id="mevcut_sicaklik" name="mevcut_sicaklik" placeholder="Mevcut Sıcaklık Gir">
 
-        <label for="optimum_sicaklik">Optimum Sicaklik [C°]:</label>
-        <input type="text" id="optimum_sicaklik" name="optimum_sicaklik"><br><br>
+            <label for="optimum_sicaklik">Optimum Sıcaklık</label>
+            <input type="text" id="optimum_sicaklik" name="optimum_sicaklik" placeholder="Optimum Sıcaklık Gir">
 
-        <label for="gf">Gubreleme Katsayisi (0-1):</label>
-        <input type="text" id="gf" name="gf"><br><br>
+            <label for="gf">Genetik Faktör (GF)</label>
+            <input type="text" id="gf" name="gf" placeholder="GF Gir">
 
-        <label for="sf">Sulama Yonetimi Katsayisi (0-1):</label>
-        <input type="text" id="sf" name="sf"><br><br>
+            <label for="sf">Sulanma Faktörü (SF)</label>
+            <input type="text" id="sf" name="sf" placeholder="SF Gir">
 
-        <label for="zf">Zararli Yonetimi Katsayisi (0-1):</label>
-        <input type="text" id="zf" name="zf"><br><br>
+            <label for="zf">Zirai Faktör (ZF)</label>
+            <input type="text" id="zf" name="zf" placeholder="ZF Gir">
 
-        <input type="submit" value="Hesapla">
-    </form>
+            <button type="submit">Get Recommendation</button>
+        </form>
+    </div>
 </body>
 </html>
