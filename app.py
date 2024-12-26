@@ -63,7 +63,7 @@ def predict():
             "iç anadolu bölgesi": "Ic Anadolu Bolgesi",
             "ıc anadolu bolgesi": "Ic Anadolu Bolgesi",
             "ıc anadolu": "Ic Anadolu Bolgesi",
-
+            "İç anadolu": "Ic Anadolu Bolgesi",
         }
 
         # Kullanıcı girişini normalize edin (bölge ve şehir eşleştiriliyor)
@@ -206,23 +206,23 @@ def predict():
             34: "https://www.organikciyizbiz.com/organik-muz-organik-ufuklar",  # Muz
             35: "https://upload.wikimedia.org/wikipedia/commons/6/6e/Pomegranate.jpg",  # Nar
             36: "https://www.cnnturk.com/saglik/narin-faydalari-nelerdir-nelere-iyi-gelir-nar-nasil-tuketilir-ne-ise-yarar-1688140",  # Narenciye
-            37: "https://upload.wikimedia.org/wikipedia/commons/e/ec/Chickpeas.jpg",  # Nohut
-            38: "https://upload.wikimedia.org/wikipedia/commons/2/22/Cotton_plant_bolls.jpg",  # Pamuk
-            39: "https://upload.wikimedia.org/wikipedia/commons/c/ca/Sugar_Beet.jpg",  # Pancar
-            40: "https://upload.wikimedia.org/wikipedia/commons/d/de/Brown_Potato.jpg",  # Patates
-            41: "https://upload.wikimedia.org/wikipedia/commons/e/e2/Eggplant.jpg",  # Patlican
-            42: "https://upload.wikimedia.org/wikipedia/commons/4/44/New_Zealand_Spinach.jpg",  # Pazi
-            43: "https://upload.wikimedia.org/wikipedia/commons/5/57/Rice-Plant.jpg",  # Pirinc
-            44: "https://upload.wikimedia.org/wikipedia/commons/9/96/Cucumber01.jpg",  # Salatalik
-            45: "https://upload.wikimedia.org/wikipedia/commons/4/47/Sarimsak.JPG",  # Sarimsak
-            46: "https://upload.wikimedia.org/wikipedia/commons/3/34/Peach.jpg",  # Seftali
-            47: "https://upload.wikimedia.org/wikipedia/commons/c/cf/Onions.jpg",  # Sogan
-            48: "https://upload.wikimedia.org/wikipedia/commons/a/ae/Tobacco_Field.jpg",  # Tutun
-            49: "https://upload.wikimedia.org/wikipedia/commons/6/63/Grapes.jpg",  # Uzum
-            50: "https://upload.wikimedia.org/wikipedia/commons/d/db/Alfalfa.jpg",  # Yonca
-            51: "https://upload.wikimedia.org/wikipedia/commons/0/0c/Oats.jpg",  # Yulaf
-            52: "https://upload.wikimedia.org/wikipedia/commons/e/e7/Olive_Tree.jpg",  # Zeytin
-            53: "https://upload.wikimedia.org/wikipedia/commons/f/fa/Pistachio_tree.jpg",  # Antepfistigi
+            37: "https://depositphotos.com/tr/photos/nohut.html",  # Nohut
+            38: "https://www.istockphoto.com/tr/foto%C4%9Fraflar/pamuk",  # Pamuk
+            39: "https://www.bigstockphoto.com/tr/image-644731/stock-photo-pancar-ve-ye%C5%9Filler-4",  # Pancar
+            40: "https://pixabay.com/tr/photos/search/patates%20resmi/",  # Patates
+            41: "https://depositphotos.com/tr/photos/patl%C4%B1can.html",  # Patlican
+            42: "https://empowerwomen.create.vista.com/tr/photos/paz%C4%B1/",  # Pazi
+            43: "https://www.istockphoto.com/tr/foto%C4%9Fraflar/pirin%C3%A7",  # Pirinc
+            44: "https://www.istockphoto.com/tr/foto%C4%9Fraflar/salatal%C4%B1k",  # Salatalik
+            45: "https://www.istockphoto.com/tr/foto%C4%9Fraflar/sar%C4%B1msak",  # Sarimsak
+            46: "https://www.istockphoto.com/tr/foto%C4%9Fraflar/%C5%9Feftali-a%C4%9Fac%C4%B1",  # Seftali
+            47: "https://depositphotos.com/tr/photos/onions.html",  # Sogan
+            48: "https://depositphotos.com/tr/photos/t%C3%BCt%C3%BCn-bitkileri.html",  # Tutun
+            49: "https://termodizayn.com/muhafaza-kosullari/meyve-muhafaza/uzum/",  # Uzum
+            50: "https://www.istockphoto.com/tr/foto%C4%9Fraflar/d%C3%B6rt-yaprakl%C4%B1-yonca-foto%C4%9Fraflar",  # Yonca
+            51: "https://www.bigstockphoto.com/tr/image-565061/stock-photo-yulaf",  # Yulaf
+            52: "https://www.istockphoto.com/tr/foto%C4%9Fraflar/zeytin-a%C4%9Fac%C4%B1",  # Zeytin
+            53: "https://pixabay.com/tr/photos/search/antep%20f%C4%B1st%C4%B1%C4%9F%C4%B1/",  # Antepfistigi
         }
 
         # Tahmini değerlendiriyoruz
