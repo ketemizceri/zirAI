@@ -117,7 +117,7 @@
            <div class="row mt-4">
 
            <div class="col-md-12 text-center">
-				<button type="submit" class="btn btn-primary btn-lg">Öneri Al</button>
+				<button type="submit" class="btn btn-primary btn-lg">Öneri Al (50tl)</button>
 			</div>
 			</div>
 
@@ -131,7 +131,7 @@
     </div>
         <div class="col-md-4 d-flex justify-content-center">
             <div class="card bg-dark" style="width: 22rem;">
-                <img src="{{ image }}" class="card-img-top" alt="ürünfotosu">
+                <img src="{{ url_for('static', filename=image) }}" alt="ürünfotosu">
                 <div class="card-body text-white">
                     <h5 class="card-title">Önerilen Ürün: {{ result }} </h5>
                     <p class="card-text">ZirAI, verilerinizi analiz etti ve sizin için en uygun ürünü önerdi: {{ result }}. Bu ürün, bölgenizin iklim ve toprak koşullarına en yüksek verimlilikle uyum sağlayacak şekilde seçildi. Daha başarılı bir hasat için şimdi başlayabilirsiniz! 🌱🌾</p>
