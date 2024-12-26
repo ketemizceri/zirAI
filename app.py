@@ -63,7 +63,7 @@ def predict():
             "iç anadolu bölgesi": "Ic Anadolu Bolgesi",
             "ıc anadolu bolgesi": "Ic Anadolu Bolgesi",
             "ıc anadolu": "Ic Anadolu Bolgesi",
-            "İç anadolu": "Ic Anadolu Bolgesi",
+            "İç anadolu": "Ic Anadolu Bolgesi"
         }
 
         # Kullanıcı girişini normalize edin (bölge ve şehir eşleştiriliyor)
@@ -169,60 +169,59 @@ def predict():
         }
 
         dt_urun_images = {
-            1: "https://www.istockphoto.com/tr/foto%C4%9Fraflar/armut",  # Armut
-            2: "https://www.serkatarim.com.tr/arpa-nasil-yetistirilir/",  # Arpa
-            3: "https://osterras.com/aycicegi/",  # Aycicegi
-            4: "https://www.e-fidancim.com/urun/geleneksel-tatlilik-recelllik-balkabagi-fidesi-5-adet",  # Balkabagi
-            5: "https://www.tohumevi.com.tr/urun/sultani-bamya-tohumu",  # Bamya
-            6: "https://cookidoo.com.tr/recipes/recipe/tr-TR/r751324",  # Bezelye
-            7: "https://www.nefisyemektarifleri.com/blog/biber-cesitleri-ve-faydalari-nelerdir/",  # Biber
-            8: "https://www.demircibahcesi.com/taze-borulce",  # Borulce
-            9: "https://www.auroracereali.com/tr/prodotto/ekmeklik-bugday/",  # Bugday
-            10: "https://ciftcideneve.com/urun/5575/organik-cavdar-dogal-organik-dogal-organik-bugday-ve-bulgur",  # Cavdar
-            11: "https://pixabay.com/tr/photos/%C3%A7ay-tarlas%C4%B1-/",  # Cay
-            12: "https://www.bakkalhasan.com/urun/ceviz-kabuklu-maras-18-yayla-10-kg-cok-cok-al-cok-az-daha-ode",  # Ceviz
-            13: "https://www.agrowy.com/bitki-yetistiriciligi/cilek-yetistiriciligi",  # Cilek
-            14: "https://www.medicalpark.com.tr/domatesin-zararlari/hg-3885",  # Domates
-            15: "https://www.sadahastanesi.com/tr/1-elma-kac-kalori-elmanin-besin-degeri",  # Elma
-            16: "https://www.buyukanadoluhastanesi.com/haber/2190/erigin-faydalari-erik-tuketmeniz-icin-11-neden",  # Erik
-            17: "https://www.tarimdunyasi.net/2023/08/15/taze-fasulye-neden-100-lira-oldu/",  # Fasulye
-            18: "https://www.altungida.com.tr/findik-nedir/",  # Findik
-            19: "https://www.ozgurleblebi.com/Cig-Kabuklu-Fistik",  # Fistik
-            20: "https://www.tohumevi.com.tr/urun/kirmizi-gul-fidani-yediveren-kokulu",  # Gul
-            21: "https://www.google.com/imgres?q=ha%C5%9Fha%C5%9F%20foto&imgurl=https%3A%2F%2Fwww.demirbasmakina.com%2Fimaj%2Fblog-gorselleri%2Fhashas-ezmesi-nerede-kullanilir-demirbas.jpg&imgrefurl=https%3A%2F%2Fwww.demirbasmakina.com%2Fhashas-ezmesi-nerede-kullanilir&docid=p-1H76D-gRbA6M&tbnid=Id0IBieB9Qf6XM&vet=12ahUKEwiqkLey6cOKAxUNVfEDHao7IDcQM3oECH4QAA..i&w=900&h=592&hcb=2&ved=2ahUKEwiqkLey6cOKAxUNVfEDHao7IDcQM3oECH4QAA",
-            # Hashas
-            22: "https://www.google.com/imgres?q=incir%20foto&imgurl=https%3A%2F%2Fwww.tazekuru.com%2FUserFiles%2FFotograflar%2F148-70-buyuk-jpg-70-buyuk.jpg&imgrefurl=https%3A%2F%2Fwww.tazekuru.com%2Fkurutulmus-incir-map-paket-50gr&docid=JRHAtKJKVkUQqM&tbnid=agiwn7Bn8MybPM&vet=12ahUKEwiHpdK96cOKAxXuVPEDHWfoItEQM3oECBcQAA..i&w=700&h=700&hcb=2&ved=2ahUKEwiHpdK96cOKAxXuVPEDHWfoItEQM3oECBcQAA",  # Incir
-            23: "http://t2.gstatic.com/licensed-image?q=tbn:ANd9GcRSD4__jt0WNMkqOCyLMnCg6rYIrt909b6pVEqZOLVFLW1cNeRuEsfgQNJQWIqceCcc",  # Karpuz
-            24: "https://www.zengardentr.com/urun/altin-kalpler-kavun-tohumu-geleneksel-hearts-of-gold-melon-1",  # Kavun
-            25: "https://www.medicalpark.com.tr/kayisi-cekirdegi-faydalari/hg-4028",  # Kayisi
-            26: "https://misbell.net/kestane-cesitleri/",  # Kestane
-            27: "http://www.saygifidancilik.com/kiraz/",  # Kiraz
-            28: "https://www.medicalpark.com.tr/kivinin-faydalari/hg-2933",  # Kivi
-            29: "https://tohumbaba.com/urun/lahana-tohumu/",  # Lahana
-            30: "https://www.lezzet.com.tr/lezzetten-haberler/limon-nasil-secilir",  # Limon
-            31: "https://tr.wikipedia.org/wiki/Marul",  # Marul
-            32: "https://surmeliciftligi.com/urun/kirmizi-mercimek-kg/",  # Mercimek
-            33: "https://abptds.com/misir-kurutma-neden-onemlidir/",  # Misir
-            34: "https://www.organikciyizbiz.com/organik-muz-organik-ufuklar",  # Muz
-            35: "https://upload.wikimedia.org/wikipedia/commons/6/6e/Pomegranate.jpg",  # Nar
-            36: "https://www.cnnturk.com/saglik/narin-faydalari-nelerdir-nelere-iyi-gelir-nar-nasil-tuketilir-ne-ise-yarar-1688140",  # Narenciye
-            37: "https://depositphotos.com/tr/photos/nohut.html",  # Nohut
-            38: "https://www.istockphoto.com/tr/foto%C4%9Fraflar/pamuk",  # Pamuk
-            39: "https://www.bigstockphoto.com/tr/image-644731/stock-photo-pancar-ve-ye%C5%9Filler-4",  # Pancar
-            40: "https://pixabay.com/tr/photos/search/patates%20resmi/",  # Patates
-            41: "https://depositphotos.com/tr/photos/patl%C4%B1can.html",  # Patlican
-            42: "https://empowerwomen.create.vista.com/tr/photos/paz%C4%B1/",  # Pazi
-            43: "https://www.istockphoto.com/tr/foto%C4%9Fraflar/pirin%C3%A7",  # Pirinc
-            44: "https://www.istockphoto.com/tr/foto%C4%9Fraflar/salatal%C4%B1k",  # Salatalik
-            45: "https://www.istockphoto.com/tr/foto%C4%9Fraflar/sar%C4%B1msak",  # Sarimsak
-            46: "https://www.istockphoto.com/tr/foto%C4%9Fraflar/%C5%9Feftali-a%C4%9Fac%C4%B1",  # Seftali
-            47: "https://depositphotos.com/tr/photos/onions.html",  # Sogan
-            48: "https://depositphotos.com/tr/photos/t%C3%BCt%C3%BCn-bitkileri.html",  # Tutun
-            49: "https://termodizayn.com/muhafaza-kosullari/meyve-muhafaza/uzum/",  # Uzum
-            50: "https://www.istockphoto.com/tr/foto%C4%9Fraflar/d%C3%B6rt-yaprakl%C4%B1-yonca-foto%C4%9Fraflar",  # Yonca
-            51: "https://www.bigstockphoto.com/tr/image-565061/stock-photo-yulaf",  # Yulaf
-            52: "https://www.istockphoto.com/tr/foto%C4%9Fraflar/zeytin-a%C4%9Fac%C4%B1",  # Zeytin
-            53: "https://pixabay.com/tr/photos/search/antep%20f%C4%B1st%C4%B1%C4%9F%C4%B1/",  # Antepfistigi
+            1: "images/armut.jpeg",  # Armut
+            2: "images/arpa.jpeg",  # Arpa
+            3: "images/aycicegi.jpg",  # Aycicegi
+            4: "images/balkabagi.jpg",  # Balkabagi
+            5: "images/bamya.jpeg",  # Bamya
+            6: "images/bezelye.jpg",  # Bezelye
+            7: "images/biber.jpg",  # Biber
+            8: "images/borulce.jpg",  # Borulce
+            9: "images/bugday.jpeg",  # Bugday
+            10: "images/cavdar.jpg",  # Cavdar
+            11: "images/cay.jpg",  # Cay
+            12: "images/ceviz.jpg",  # Ceviz
+            13: "images/cilek",  # Cilek
+            14: "images/domates.jpg",  # Domates
+            15: "images/elma.jpg",  # Elma
+            16: "images/erik.jpg",  # Erik
+            17: "images/fasulye.jpg",  # Fasulye
+            18: "images/findik.jpg",  # Findik
+            19: "images/fistik.jpg",  # Fistik
+            20: "images/gul.jpg",  # Gul
+            21: "images/hashas.jpg", # Hashas
+            22: "images/incir.jpg",  # Incir
+            23: "images/karpuz.jpg",  # Karpuz
+            24: "images/kavun.jpeg",  # Kavun
+            25: "kayisi.jpg",  # Kayisi
+            26: "images/kestane.jpg",  # Kestane
+            27: "images/kiraz.pg",  # Kiraz
+            28: "images/kivi.jpg",  # Kivi
+            29: "images/lahana.jpg",  # Lahana
+            30: "images/limon.jpg",  # Limon
+            31: "images/marul.jpg",  # Marul
+            32: "images/mercimek.jpg",  # Mercimek
+            33: "images/misir.jpg",  # Misir
+            34: "images/muz.jpg",  # Muz
+            35: "images/nar.jpg",  # Nar
+            36: "images/narenciye.jpg",  # Narenciye
+            37: "images/nohut.jpg",  # Nohut
+            38: "images/pamuk.jpg",  # Pamuk
+            39: "images/pancar.jpg",  # Pancar
+            40: "images/patates.jpg",  # Patates
+            41: "images/patlican.jpg",  # Patlican
+            42: "images/pazi.jpg",  # Pazi
+            43: "images/pirinc.jpg",  # Pirinc
+            44: "images/salatalik.jpeg",  # Salatalik
+            45: "images/sarimsak.jpg",  # Sarimsak
+            46: "images/seftali.jpg",  # Seftali
+            47: "images/sogan.jpg",  # Sogan
+            48: "images/tutunjpg",  # Tutun
+            49: "images/uzum.jpg",  # Uzum
+            50: "images/yonca.jpg",  # Yonca
+            51: "images/yulaf.jpg",  # Yulaf
+            52: "images/zeytin.jpg",  # Zeytin
+            53: "images/antepfistigi.jpg",  # Antepfistigi
         }
 
         # Tahmini değerlendiriyoruz
