@@ -1,18 +1,62 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sonuçlar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #e6f2f5;
+            border-radius: 10px;
+            padding: 20px 40px;
+            width: 400px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #4CAF50;
+        }
+        p {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+        .result {
+            font-weight: bold;
+            color: #007BFF;
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            color: white;
+            background-color: #007BFF;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        a:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hesaplanan Sonuçlar</h1>
-    <p>Toprak Verimlilik Endeksi (TFE): {{ tfe }}</p>
-    <p>Su Kullanımı Endeksi (SYE): {{ sye }}</p>
-    <p>İklim Uygunluk Katsayısı (IAK): {{ iak }}</p>
-    <p>Tarla Yönetimi Faktörü (TMF): {{ tmf }}</p>
-    <p>Hasat Miktarı (H): {{ h }} kg/da</p>
-    <br>
-    <a href="/">Yeni Hesaplama Yap</a>
+    <div class="container">
+        <h1>Hasat Sonuçları</h1>
+        <p>Toprak Verimlilik Faktörü: <span class="result">{{ tfe }}</span></p>
+        <p>Su Kullanımı Endeksi: <span class="result">{{ sye }}</span></p>
+        <p>İklim Uygunluk Katsayısı: <span class="result">{{ iak }}</span></p>
+        <p>Tarla Yönetim Faktörü: <span class="result">{{ tmf }}</span></p>
+        <p>Toplam Hasat Miktarı: <span class="result">{{ h }}</span></p>
+        <a href="/">Yeni Tahmin</a>
+    </div>
 </body>
 </html>
