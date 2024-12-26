@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasat Miktarı Hesaplama</title>
+</head>
+<body>
+    <h1>Hasat Miktarı Hesaplama</h1>
+    <form method="POST">
+        <label for="um">Ektiginiz Urun Miktari (kg/da):</label>
+        <input type="text" id="um" name="um"><br><br>
+
+        <label for="om">Toprak Organik Madde Orani (OM) [%]:</label>
+        <input type="text" id="om" name="om"><br><br>
+
+        <label for="npk">Toplam Besin Miktari (NPK) [kg/da]:</label>
+        <input type="text" id="npk" name="npk"><br><br>
+
+        <label for="max_om">Maksimum Organik Madde Orani (maxOM) [%]:</label>
+        <input type="text" id="max_om" name="max_om"><br><br>
+
+        <label for="max_npk">Maksimum Besin Miktari (maxNPK) [kg/da]:</label>
+        <input type="text" id="max_npk" name="max_npk"><br><br>
+
+        <label for="mevcut_su">Mevcut Su Miktari [mm]:</label>
+        <input type="text" id="mevcut_su" name="mevcut_su"><br><br>
+
+        <label for="bitki_su_ihtiyaci">Bitki Su Ihtiyaci [mm]:</label>
+        <input type="text" id="bitki_su_ihtiyaci" name="bitki_su_ihtiyaci"><br><br>
+
+        <label for="mevcut_sicaklik">Mevcut Sicaklik [C°]:</label>
+        <input type="text" id="mevcut_sicaklik" name="mevcut_sicaklik"><br><br>
+
+        <label for="optimum_sicaklik">Optimum Sicaklik [C°]:</label>
+        <input type="text" id="optimum_sicaklik" name="optimum_sicaklik"><br><br>
+
+        <label for="gf">Gubreleme Katsayisi (0-1):</label>
+        <input type="text" id="gf" name="gf"><br><br>
+
+        <label for="sf">Sulama Yonetimi Katsayisi (0-1):</label>
+        <input type="text" id="sf" name="sf"><br><br>
+
+        <label for="zf">Zararli Yonetimi Katsayisi (0-1):</label>
+        <input type="text" id="zf" name="zf"><br><br>
+
+        <input type="submit" value="Hesapla">
+    </form>
+</body>
+</html>
