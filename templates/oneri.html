@@ -131,10 +131,10 @@
     </div>
         <div class="col-md-4 d-flex justify-content-center">
             <div class="card bg-dark" style="width: 22rem;">
-                <img src="{{url_for('static', filename='vinland.webp')}}" class="card-img-top" alt="ürünfotosu">
+                <img src="{{ image }}" class="card-img-top" alt="ürünfotosu">
                 <div class="card-body text-white">
-                    <h5 class="card-title">Ürün önerisi şudur:</h5>
-                    <p class="card-text">{{ result }}</p>
+                    <h5 class="card-title">Önerilen Ürün: {{ result }} </h5>
+                    <p class="card-text">ZirAI, verilerinizi analiz etti ve sizin için en uygun ürünü önerdi: {{ result }}. Bu ürün, bölgenizin iklim ve toprak koşullarına en yüksek verimlilikle uyum sağlayacak şekilde seçildi. Daha başarılı bir hasat için şimdi başlayabilirsiniz! 🌱🌾</p>
                 </div>
 
             </div>
