@@ -54,6 +54,7 @@ def predict():
             "doguanadolu bolgesi": "Dogu Anadolu Bolgesi",
             "doğu anadolu": "Dogu Anadolu Bolgesi",
             "doğu anadolu bölgesi": "Dogu Anadolu Bolgesi",
+            "guneydogu anadolu bolgesi":"Guneydogu Anadolu Bolgesi",
             "guneydogu": "Guneydogu Anadolu Bolgesi",
             "guneydoğu bolgesi": "Guneydogu Anadolu Bolgesi",
             "guneydogu bolgesi": "Guneydogu Anadolu Bolgesi",
@@ -61,6 +62,7 @@ def predict():
             "güneydoğu bölgesi": "Guneydogu Anadolu Bolgesi",
             "iç anadolu" : "Ic Anadolu Bolgesi",
             "iç anadolu bölgesi": "Ic Anadolu Bolgesi",
+            "ic anadolu bölgesi": "Ic Anadolu Bolgesi",
             "ıc anadolu bolgesi": "Ic Anadolu Bolgesi",
             "ıc anadolu": "Ic Anadolu Bolgesi",
             "İç anadolu": "Ic Anadolu Bolgesi"
@@ -216,7 +218,7 @@ def predict():
             45: "images/sarimsak.jpg",  # Sarimsak
             46: "images/seftali.jpg",  # Seftali
             47: "images/sogan.jpg",  # Sogan
-            48: "images/tutunjpg",  # Tutun
+            48: "images/tutun.jpg",  # Tutun
             49: "images/uzum.jpg",  # Uzum
             50: "images/yonca.jpg",  # Yonca
             51: "images/yulaf.jpg",  # Yulaf
