@@ -4,7 +4,7 @@ Id,Sehir,BolgeId,Bolge,N,P,K,pH,Sicaklik,Nem,YagmurOrani,Urun
 1,Adana,1,Akdeniz Bolgesi,450.0,20.0,280.0,7.8,14,50,600,Bugday
 1,Adana,1,Akdeniz Bolgesi,450.0,20.0,280.0,7.8,25,60,800,Misir
 1,Adana,1,Akdeniz Bolgesi,450.0,20.0,280.0,7.8,27,60,600,Karpuz
-2,Adiyaman,4,Guneydogu Anadolu Bolgesi,1150.0,15.0,300.0,7.7,25,65,900,Tutun
+2,Adiyaman,4,Guneydogu Anadolu Bolgesi,1150.0,15.0,300.0,7.7,24,73,650,Tutun
 2,Adiyaman,4,Guneydogu Anadolu Bolgesi,1150.0,15.0,300.0,7.7,14,50,600,Bugday
 2,Adiyaman,4,Guneydogu Anadolu Bolgesi,1150.0,15.0,300.0,7.7,20,55,450,Mercimek
 2,Adiyaman,4,Guneydogu Anadolu Bolgesi,1150.0,15.0,300.0,7.7,25,60,600,Uzum
@@ -286,7 +286,7 @@ Id,Sehir,BolgeId,Bolge,N,P,K,pH,Sicaklik,Nem,YagmurOrani,Urun
 59,Tekirdag,7,Marmara Bolgesi,750.0,14.0,250.0,7.0,18,65,500,Sogan
 59,Tekirdag,7,Marmara Bolgesi,750.0,14.0,250.0,7.0,27,65,500,Karpuz
 59,Tekirdag,7,Marmara Bolgesi,750.0,14.0,250.0,7.0,20,65,800,Kiraz
-60,Tokat,6,Karadeniz Bolgesi,1000.0,8.0,175.0,6.0,25,70,800,Tutun
+60,Tokat,6,Karadeniz Bolgesi,1000.0,8.0,175.0,6.0,24,73,650,Tutun
 60,Tokat,6,Karadeniz Bolgesi,1000.0,8.0,175.0,6.0,17,70,700,Elma
 60,Tokat,6,Karadeniz Bolgesi,1000.0,8.0,175.0,6.0,17,80,1100,Findik
 60,Tokat,6,Karadeniz Bolgesi,1000.0,8.0,175.0,6.0,25,70,800,Domates
@@ -318,7 +318,7 @@ Id,Sehir,BolgeId,Bolge,N,P,K,pH,Sicaklik,Nem,YagmurOrani,Urun
 65,Van,2,Dogu Anadolu Bolgesi,750.0,12.0,140.0,7.5,22,70,600,Fasulye
 66,Yozgat,5,Ic Anadolu Bolgesi,900.0,9.0,225.0,8.0,15,55,425,Bugday
 66,Yozgat,5,Ic Anadolu Bolgesi,900.0,9.0,225.0,8.0,17,55,400,Arpa
-66,Yozgat,5,Ic Anadolu Bolgesi,900.0,9.0,225.0,8.0,25,70,800,Tutun
+66,Yozgat,5,Ic Anadolu Bolgesi,900.0,9.0,225.0,8.0,24,73,650,Tutun
 66,Yozgat,5,Ic Anadolu Bolgesi,900.0,9.0,225.0,8.0,20,72,650,Patates
 66,Yozgat,5,Ic Anadolu Bolgesi,900.0,9.0,225.0,8.0,17,70,700,Elma
 67,Zonguldak,6,Karadeniz Bolgesi,1000.0,8.0,175.0,6.0,17,80,1100,Findik
